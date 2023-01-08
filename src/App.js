@@ -1,10 +1,14 @@
+import React from "react";
 import "./App.css";
+
 const Persen = (props) => {
-  <div className="Persen">
-    <h1>{props.Name}</h1>
-    <h2>{props.lastName}</h2>
-    <h3>{props.age}</h3>
-  </div>;
+  return (
+    <div className="Persen">
+      <h1>{props.Name}</h1>
+      <h2>{props.lastName}</h2>
+      <h3>{props.age}</h3>
+    </div>
+  );
 };
 const App = () => {
   return (
