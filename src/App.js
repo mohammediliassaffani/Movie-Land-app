@@ -23,8 +23,9 @@ const App = () => {
           value={"iliass"}
           onChange={() => {}}
         />
-        <img src={serachIcon} alt="search" />
+        <img src={serachIcon} alt="search" onClick={() => {}} />
       </div>
+      <div className="container"></div>
     </div>
   );
 };
