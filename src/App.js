@@ -1,19 +1,23 @@
-import React from "react";
+import { useState, useEffect } from "react";
 import "./App.css";
 
-const Persen = (props) => {
-  return (
-    <div className="Persen">
-      <h1>{props.Name}</h1>
-      <h2>{props.lastName}</h2>
-      <h3>{props.age}</h3>
-    </div>
-  );
-};
 const App = () => {
+  const [conter, setCounter] = useState(0);
+
+  useEffect(() => {
+    return () => {
+      setCounter(0);
+    };
+  }, []);
   return (
     <div className="App">
-      <Persen name="iliass" lastName="affani" age="30" />
+      <button onClick={() => setCounter((prevCount) => prevCount + 1)}>
+        +
+      </button>
+      <h2>{conter}</h2>
+      <button onClick={() => setCounter((prevCount) => prevCount - 1)}>
+        -
+      </button>
     </div>
   );
 };
