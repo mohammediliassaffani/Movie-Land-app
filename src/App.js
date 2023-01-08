@@ -1,7 +1,14 @@
 import "./App.css";
 
-function App() {
-  return <div className="App"></div>;
-}
+const App = () => {
+  const name = "iliass";
+  const isName = false;
+  return (
+    <div className="App">
+      <h1>hello </h1>
+      {isName ? name : "spmeone"}
+    </div>
+  );
+};
 
 export default App;
