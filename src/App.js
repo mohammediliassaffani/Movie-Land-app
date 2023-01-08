@@ -6,7 +6,7 @@ const App = () => {
 
   useEffect(() => {
     return () => {
-      setCounter(0);
+      // setCounter(0);
     };
   }, []);
   return (
