@@ -1,12 +1,15 @@
 import "./App.css";
-
+const Persen = (props) => {
+  <div className="Persen">
+    <h1>{props.Name}</h1>
+    <h2>{props.lastnName}</h2>
+    <h3>{props.age}</h3>
+  </div>;
+};
 const App = () => {
-  const name = "iliass";
-  const isName = false;
   return (
     <div className="App">
-      <h1>hello </h1>
-      {isName ? name : "spmeone"}
+      <Persen name="iliass" lastName="affani" age="30" />
     </div>
   );
 };
